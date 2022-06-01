@@ -1,0 +1,67 @@
+/* GENERAL SETTINGS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f5f0e8;
+}
+
+header{
+    padding: 1rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+/* CONTAINER */
+.container h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* GRID */
+.grid{
+    width: 500px;
+    height: 500px;
+    margin: 60px auto;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* QUADRATI DELLA GRIGLIA */
+.square{
+    border: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span{
+    display: none;
+}
+
+
+/* COLORED BOXES */
+.square-even.clicked{
+    background-color: green;
+}
+
+.square-odd.clicked{
+    background-color: red;
+}
+
+
+.square.clicked span{
+    display: block;
+}
